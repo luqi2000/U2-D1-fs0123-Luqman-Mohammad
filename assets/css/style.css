@@ -42,44 +42,6 @@ header nav li a:hover {
 header nav li a::before {
     content: "\22c6\0020";
 }
-@media screen and (min-width: 1200px){
-    table {
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    }
-    header {
-        display: flex;
-        margin-bottom: unset;
-    }
-    header p{
-        margin-top: 20px;
-    }
-    nav ul {
-        display: flex;
-    }
-    nav ul li{
-        margin-top: 20px;
-        margin-left: 20px;
-    }
-    header div img{
-        margin: unset;
-    }
-    aside div{
-        display: inline-block;
-        width: 20%;
-        width: auto;
-    }
-    iframe{
-        width: 50%;
-        margin: unset;
-    }
-    section{
-        display: inline-block;
-    }
-}
-
-
 
 /* MAIN */
 main {
@@ -215,4 +177,56 @@ footer {
 }
 footer a {
     color: fuchsia;
+}
+
+@media screen and (min-width: 1200px){
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+    
+    header .brand img {
+        margin-bottom: 20px;
+        display: inline-block;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      header {
+        text-align: left;
+      }
+      header p{
+        display: inline-block;
+       
+      }
+    
+      header .brand {
+        display:inline-block
+      }
+      header .brand img {
+        vertical-align: middle;
+      }
+
+      nav li{
+        display: inline-block;
+        float: right;
+      }
+
+    aside > div{
+        display: inline-block;
+        margin-inline: -2px;
+        width: 33%;
+        text-align: left;
+    }
+    iframe{
+        width: 50%;
+        height: 200px;
+    }
+    section{
+        border-radius: 20px;
+        width: 50%;
+        float: right    ;
+        height: 200px;
+    }
 }
